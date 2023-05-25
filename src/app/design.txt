@@ -1,0 +1,28 @@
+Start
+├── Receive HTTP request
+│   ├── Authenticate user
+│   │   ├── Validate credentials
+│   │   └── Generate authentication token
+│   │       └── Return token
+|   ├── Create user
+|   |   ├── Validate credentials
+│   │   └── Create New User
+│   │       └── Return to authentication page
+│   ├── Mark Attendance
+│   │   ├── Automated Attendance
+│   │   │   ├── Receive QR code data
+│   │   │   ├── Validate QR code
+│   │   │   └── Update attendance status
+│   │   └── Manual Attendance
+│   │       ├── Receive attendance data
+│   │       ├── Validate data
+│   │       └── Update attendance status
+│   ├── Generate QR Code
+│   │   ├── Generate QR code data
+│   │   └── Return QR code image
+│   └── Other API endpoints
+│       ├── Process requests
+│       └── Perform necessary operations
+└── Return HTTP response
+     └── Return response data or error message
+End
